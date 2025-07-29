@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Advanced Character Counter</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+		<div class="w-full max-w-md bg-white shadow-xl rounded-2xl p-6 space-y-4">
+			<h2 class="text-2xl font-bold text-gray-800">Post something ✍️</h2>
+
+			<div class="relative">
+				<textarea id="textInput" maxlength="150" rows="5" class="w-full p-4 text-gray-700 border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none transition-all" placeholder="Type your message here..."></textarea>
+
+				<div class="absolute bottom-2 right-4 text-sm">
+					<span id="remainingCount" class="font-medium text-gray-500">150</span>
+
+					<span class="text-gray-400">chars left</span>
+				</div>
+			</div>
+
+			<div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+				<div id="progressBar" class="h-full w-0 bg-blue-500 transition-all duration-300 ease-in-out"></div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
