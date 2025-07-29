@@ -1,4 +1,4 @@
-# ✨ Advanced Character Counter
+# ✨ Character Counter
 
 A responsive and modern character counter input built with **HTML**, **Tailwind CSS** and **JavaScript**. It provides real-time feedback, dynamic color cues and a stylish progress bar to enhance user input experience in forms and apps.
 
